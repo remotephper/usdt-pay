@@ -1,5 +1,5 @@
 # usdt-pay
-usdt支付对接
+usdt支付对接（目前只支持TRC20）
 
 项目合作，联系飞机： @remotephper
 
