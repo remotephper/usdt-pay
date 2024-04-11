@@ -35,18 +35,6 @@ notify_url | https://wwww.demo.com | String | 是 | 回调url，必须是https
 now | 2024-04-11 18:49:48 | String | 是 | 当前时间，必须是北京时间
 trade_id | e10adc3949ba59abbe56e057f20f883e | String | 是 | 交易号id，唯一
 sign | db6d700791dcc43255edbc6aa254a58d | String | 是 | 签名
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
 #### 成功响应示例
 ```javascript
 {
@@ -118,18 +106,6 @@ notify_url | https://wwww.demo.com | String | 是 | 回调url，必须是https
 now | 2024-04-11 18:49:48 | String | 是 | 当前时间，必须是北京时间
 trade_id | e10adc3949ba59abbe56e057f20f883e | String | 是 | 交易号id，唯一
 sign | db6d700791dcc43255edbc6aa254a58d | String | 是 | 签名
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
 #### 成功响应示例
 ```javascript
 {
@@ -159,21 +135,15 @@ data | - | Array | 数组
 #### Content-Type
 > none
 
-#### 认证方式
-```text
-noauth
-```
-#### 预执行脚本
-```javascript
-暂无预执行脚本
-```
-#### 后执行脚本
-```javascript
-暂无后执行脚本
-```
 #### 成功响应示例
 ```javascript
-{"status":1,"msg":"\u64cd\u4f5c\u6210\u529f","data":{"rate":7.4}}
+{
+	"status": 1, //状态，大于0代表成功，小于0代表失败
+	"msg": "操作成功", //描述
+	"data": {
+		"rate": 7.4 //汇率
+	} //数组
+}
 ```
 参数名 | 示例值 | 参数类型 | 参数描述
 --- | --- | --- | ---
