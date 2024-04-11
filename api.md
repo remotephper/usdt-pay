@@ -132,7 +132,11 @@ noauth
 ```
 #### 成功响应示例
 ```javascript
-{"status":1,"msg":"success, \u7b7e\u540d\u6b63\u786e\uff0c\u7b7e\u540d\u662f: c64802ccb679d7565accb20de7bc2308","data":[]}
+{
+	"status": 1, //状态，大于0代表成功，小于0代表失败
+	"msg": "success, 签名正确，签名是: c64802ccb679d7565accb20de7bc2308", //描述
+	"data": [] //数组
+}
 ```
 参数名 | 示例值 | 参数类型 | 参数描述
 --- | --- | --- | ---
